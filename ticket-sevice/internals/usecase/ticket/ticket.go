@@ -23,7 +23,6 @@ func NewTicketUseCase(repo tktRepo.TicketRepository) ticket.TicketUseCase {
 func (t *TicketUseCaseImpl) BookSingleTicket(ctx context.Context, req *ticket.TicketReq) error {
 
 	// check from redis if this seat number is not booked(do it later)
-
 	ticketID, err := ticket.GenerateTicketID()
 	if err != nil {
 		logger.LogStatus("ERROR", "error in generating ticket id")
