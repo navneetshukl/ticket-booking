@@ -1,3 +1,7 @@
 1. Booking Types:
     -> Single Booking
     -> Group Booking
+2. In admin servive I will use the bloom filter algorithm for username.
+
+3. After getting the seat number I have to save the seat Number anywhere and than process for payment.
+    After doing the payment I have to persist the data in db permanently. 
